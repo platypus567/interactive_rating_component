@@ -30,31 +30,39 @@
 
   <p id="mainPar">Please let us know how we did with your support request. All feedback is appreciated 
   to help us improve our offering!</p>
-  <div class="container" id="btnrow">
-  <button id="rating1" class="btn buttons">1</button>
-  <button id="rating2" class="btn buttons">2</button>
-  <button id="rating3" class="btn buttons">3</button>
-  <button id="rating4" class="btn buttons">4</button>
-  <button id="rating5" class="btn buttons">5</button>
-</div>
 
-<div class="container" id="submitrow">
-  <button id="submit" class="btn">Submit</button>
-</div>
+  <form action="#">
+    <div class="container" id="btnrow">
+    <button id="rating1" class="btn buttons">1</button>
+    <button id="rating2" class="btn buttons">2</button>
+    <button id="rating3" class="btn buttons">3</button>
+    <button id="rating4" class="btn buttons">4</button>
+    <button id="rating5" class="btn buttons">5</button>
+  </div>
+
+  <div class="container" id="submitrow">
+    <button id="submit" class="btn" type="submit" onclick="changeState()">Submit</button>
+  </div>
+</form>
 </div>
 
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
+  <div class="container" id="secondcard">
+    <div class="container" id="tyimgdiv">
+    <img src="./images/illustration-thank-you.svg" alt="" id="tyimg">
+  </div>
+  <div id="selectdiv" class="container">
+    <p id="selected">You selected out of 5</p>
+  </div>
+    <h1 id="thankyou">Thank you!</h1>
 
-  <!-- You selected <!-- Add rating here -->  <!-- out of 5 -->
+   <p id="appreciate">We appreciate you taking the time to give a rating. If you ever need more support, 
+  don’t hesitate to get in touch!</p>
 
-  <!-- Thank you! -->
-
-  <!-- We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch! -->
-
-  <!-- Thank you state end -->
+  
+</div>
 
 </div>
 

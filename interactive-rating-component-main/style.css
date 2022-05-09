@@ -16,6 +16,7 @@ body{
 h1{
     color: white;
     padding-left: 12px;
+    font-weight: 700;
 }
 #maincard{
     background-color: hsl(213, 19%, 18%);
@@ -76,4 +77,57 @@ h1{
 }
 #mainPar{
     padding-left: 12px;
+}
+
+#secondcard{
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    display: none;
+}
+#tyimgdiv{
+    display: flex;
+    justify-content: center;
+}
+#tyimg{
+    margin-bottom: 15px;
+    padding-top: 30px;
+    width: 150px;
+    height: 125px;
+    justify-content: center;
+    
+}
+#selected{
+    color: orange;
+    margin: 0;
+    transform: translate(0,2.5px);
+    
+}
+#thankyou{
+    text-align: center;
+    padding: 15px;
+    font-weight: 700;
+    
+}
+#selectdiv{
+    background-color: hsl(216, 12%, 8%);
+    border-radius: 25px;
+    text-align: center;
+    width: 180px;
+}
+#appreciate{
+    text-align: center;
+    font-weight: 400;
+}
+
+@media (min-width: 400px){
+    #maincard{
+        width: 400px;
+    }
+    #secondcard{
+        width: 375px;
+    }
 }

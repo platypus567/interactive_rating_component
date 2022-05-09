@@ -4,6 +4,14 @@ const btn3 = document.querySelector('#rating3');
 const btn4 = document.querySelector('#rating4');
 const btn5 = document.querySelector('#rating5');
 
+const submit = document.querySelector('#submit');
+const select = document.querySelector('#selected')
+
+const maincard = document.querySelector('#maincard');
+
+const secondCard = document.querySelector('#secondcard');
+let reviewVal = 0;
+
 let btns = document.querySelectorAll('.buttons');
 let flag = false;
 document.querySelectorAll('.buttons').forEach(btn => {
@@ -12,6 +20,9 @@ document.querySelectorAll('.buttons').forEach(btn => {
             btn.style.backgroundColor = 'orange';
             btn.color = 'white';
             flag = true;
+            reviewVal = btn.innerText;
+            console.log(reviewVal)
+
         } else {
             btn.style.backgroundColor = 'hsl(216, 12%, 8%)';
             btn.color = 'lightgrey';
@@ -21,6 +32,16 @@ document.querySelectorAll('.buttons').forEach(btn => {
       
     )
   })
+
+
+
+
+  function changeState(){
+    maincard.style.display = 'none';
+    secondCard.style.display = 'flex';
+    
+    select.innerText = `You selected ${reviewVal} out of 5`;
+}
 
 
 
